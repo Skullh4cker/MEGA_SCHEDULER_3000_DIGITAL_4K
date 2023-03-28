@@ -11,7 +11,7 @@ namespace ScheduleMaster
         public string Name { get; private set; }
         public Action Action { get; private set; }
         public DateTime Deadline { get; private set; }
-        //TODO: Поменять название WorkScope
+        //TODO: Поменять название WorkScope?
         public WorkScope WorkScope { get; private set; }
         public Difficulty Difficulty { get; private set; }
         public bool IsDelegable { get; private set; }
@@ -26,7 +26,7 @@ namespace ScheduleMaster
             Difficulty = difficulty;
             IsDelegable = delegable;
             IsSeparable = separable;
-            Subtasks = null;
+            Subtasks = new HashSet<Task>();
         }
     }
 }

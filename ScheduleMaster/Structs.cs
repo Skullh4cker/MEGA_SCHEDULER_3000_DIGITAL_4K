@@ -6,17 +6,34 @@ using System.Threading.Tasks;
 
 namespace ScheduleMaster
 {
+    #region Enums
+    enum Gender
+    {
+        Male,
+        Female,
+        AttackHelicopterTigerEC665
+    }
     //TODO: Добавить все типы подзадач по предметной области
     enum Action
     {
+        BuildHouse,
         TakePhoto,
         TakeVideo,
         WriteDown,
         Pizdec
     }
+    enum Temperament
+    {
+        Sanguine,
+        Choleric,
+        Melancholic,
+        Phlegmatic
+    }
+    #endregion
+
+    #region Structs
     struct Difficulty
     {
-
         private int level = 0;
         public Difficulty(int level)
         {
@@ -29,7 +46,7 @@ namespace ScheduleMaster
         }
     }
 
-    public struct WorkScope
+    struct WorkScope
     {
         private uint hours = 0;
         private uint minutes = 0;
@@ -57,6 +74,6 @@ namespace ScheduleMaster
                 }
             }
         }
-
     }
+    #endregion
 }
