@@ -1,8 +1,8 @@
-﻿using ScheduleMaster;
-
-namespace ScheduleMaster
-{
-    class Program
+﻿using ScheduleMaster; // Техзадание дерьмо
+                        // Заказчики мудаки
+namespace ScheduleMaster// Разрабы нихуя не понимают
+{                       // Менеджеры хотят зарплату
+    class Program      // Скобелев хочет в Чикаго
     {
         static void Main(string[] args)
         {
@@ -13,14 +13,14 @@ namespace ScheduleMaster
                                 new Difficulty(6),
                                 false,
                                 false);
-            Employee loh1 = new Employee("Александр",
+            Employee huila = new Employee("Александр",
                                         "Александров",
                                         "Александрович",
                                         Gender.Male,
                                         Temperament.Sanguine,
                                         3,
                                         task1);
-            Console.WriteLine($"{loh1.Name} {loh1.Surname} {loh1.Patronymic}, назначена работа: {loh1.AssignedTask.Name}");
+            Console.WriteLine($"{huila.Name} {loh1.Surname} {huila.Patronymic}, назначена работа: {huila.AssignedTask.Name}");
             Console.ReadLine();
         }
     }
