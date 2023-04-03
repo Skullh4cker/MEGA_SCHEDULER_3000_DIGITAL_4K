@@ -10,8 +10,7 @@ namespace ScheduleMaster
     enum Gender
     {
         Male,
-        Female,
-        AttackHelicopterTigerEC665
+        Female
     }
     //TODO: Добавить все типы подзадач по предметной области
     enum Action
