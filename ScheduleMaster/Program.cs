@@ -6,7 +6,7 @@ namespace ScheduleMaster// Разрабы нихуя не понимают
     {
         static void Main(string[] args)
         {
-            Task task1 = new Task("Пастроить дом",
+            Task task1 = new Task("Пастроить дом сука быстро бля",
                                 Action.BuildHouse,
                                 DateTime.Now,
                                 new WorkScope(5, 80),
@@ -20,7 +20,7 @@ namespace ScheduleMaster// Разрабы нихуя не понимают
                                         Temperament.Sanguine,
                                         3,
                                         task1);
-            Console.WriteLine($"{huila.Name} {loh1.Surname} {huila.Patronymic}, назначена работа: {huila.AssignedTask.Name}");
+            Console.WriteLine($"{huila.Name} {huila.Surname} {huila.Patronymic}, назначена работа: {huila.AssignedTask.Name}");
             Console.ReadLine();
         }
     }
